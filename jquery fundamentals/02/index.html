@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//it will loop trogh all the elements that match the query
+			var divs = $("div").css("background-color", "Green")
+			divs.each(function () {
+				alert($(this).html())
+			})
+			var imgs = $("img")
+
+			alert(imgs.length + "  " + divs.length)
+		})
+	</script>
+</head>
+
+<body>
+
+
+	<ul>
+		<li><img src=""></li>
+		<li><img src=""></li>
+		<li><img src=""></li>
+	</ul>
+
+	<ul>
+		<li>
+			<div>1</div>
+		</li>
+		<li>
+			<div>2</div>
+		</li>
+		<li>
+			<div>3</div>
+		</li>
+
+	</ul>
+
+	
+
+</body>
+
+</html>

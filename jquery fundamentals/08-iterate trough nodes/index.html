@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$("div").each(function(index,element){
+				alert($(element).text())
+			})
+		})
+	</script>
+</head>
+
+
+<body>
+
+
+	<ul>
+		<li><img src=""></li>
+		<li><img src=""></li>
+		<li><img src=""></li>
+	</ul>
+
+	<ul>
+		<li>
+			<div>1</div>
+		</li>
+		<li>
+			<div>2</div>
+		</li>
+		<li>
+			<div>3</div>
+		</li>
+
+	</ul>
+
+	<div id="firstdiv" title="asd"><p>this is my first div</p></div>
+	<div id="secondiv">this is my second div</div>
+	<div id="thirdiv">this is my third div</div>
+
+	<div class="borderme"> i have the borderme class</div>
+
+	<div title="come divitis">help</div>
+
+
+	<select>
+		<option value="default">selecciona una opcion</option>
+		<option value="second" selected="true"> segunda</option>
+		<option value="tercera">tercera</option>
+	</select>
+
+
+
+	<form>
+		<input id="firstnametextbox" value="john"  type="text"/>
+		<textarea rows="5" cols="60" id="commentsbox"></textarea>
+		<input id="submitinput" type="submit" value=" submit" >
+	</form>
+
+</body>
+
+</html>
