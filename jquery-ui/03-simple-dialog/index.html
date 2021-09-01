@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.highlight {
+			background: yellow;
+		}
+	</style>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../jquery-ui.js"></script>
+	<link rel="stylesheet" href="../jquery-ui.css">
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$( "#accordion" ).accordion();
+
+			$( "#dialog" ).dialog({
+				autoOpen:false,
+				modal:true, 
+				resizable:false,
+				draggable:false,
+				width:"600px",
+				buttons:{
+				"Yes": function(){},
+				"Yes ok": function(){}
+			}})
+			$("#openDialog").on("click",function(){
+				$("#dialog").dialog("open")
+			})
+
+
+
+		})
+	</script>
+</head>
+
+
+<body>
+
+
+		<!-- Accordion -->
+	<h2 class="demoHeaders">Accordion</h2>
+	<div id="accordion">
+		<h3>First</h3>
+		<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+		<h3>Second</h3>
+		<div>Phasellus mattis tincidunt nibh.</div>
+		<h3>Third</h3>
+		<div>Nam dui erat, auctor a, dignissim quis.</div>
+	</div>
+
+		<!--dialog-->
+
+		<!-- ui-dialog -->
+	<div id="dialog" title="Simple Dialog">
+		<img src="bm.jpg" alt="missile incoming">
+		<p>Ballistic Missile threat inbound to your current location are your sure you want to continue?</p>
+	</div>
+
+	<button id="openDialog">Abre el dialog</button>
+
+
+
+
+
+	<ul id="chungus">
+		<li><img src=""></li>
+		<li><img src=""></li>
+		<li><img src=""></li>
+	</ul>
+
+	<ul>
+		<li>
+			<div>1</div>
+		</li>
+		<li>
+			<div>2</div>
+		</li>
+		<li>
+			<div>3</div>
+		</li>
+
+	</ul>
+
+	<div id="firstdiv" title="asd">
+		<p>this is my first div</p>
+	</div>
+	<div id="secondiv">this is my second div</div>
+	<div id="thirdiv">this is my third div</div>
+
+	<div id="classic" class="borderme"> i have the borderme class</div>
+
+	<div id="dc">dinamic content</div>
+
+
+	<select>
+		<option value="default">selecciona una opcion</option>
+		<option value="second" selected="true"> segunda</option>
+		<option value="tercera">tercera</option>
+	</select>
+
+
+	<button id="button1">click me</button>
+	<form>
+		<input id="firstnametextbox" value="john" type="text" />
+		<textarea rows="5" cols="60" id="commentsbox"></textarea>
+		<input id="submitinput" type="submit" value=" submit">
+	</form>
+
+
+	<table id="ttable">
+		<thead>
+			<tr>
+				<th>ff</th>
+				<th>sf</th>
+				<th>tf</th>
+				<th>ff</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+
+</html>

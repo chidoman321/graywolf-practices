@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.ui-progressbar{
+			height: 14px;
+			width: 300px;
+		}
+
+		.ui-progressbar-value{
+			background: blue;
+		}
+
+
+		.ui-draggable{
+			background-color: #33ff33;
+			height: 100px;
+			width: 100px;
+			margin: 10px;
+			
+			border: 5px solid black;
+			border-radius: 10px;
+			text-align: center;
+			box-shadow: 5px 5px 5px black;
+		}
+
+		#sortable > .placeholder{
+			box-shadow: inset 0 0 15px black;
+			background-color: transparent;
+			border: none;
+		}
+
+
+		.trash{
+			width: 300px;
+			height: 300px;
+			opacity: 0.6;
+		}
+
+		.opaque{
+			opacity: 1;
+		}
+
+		#target{
+			background-color: black;
+			width: 50px;
+			height: 50px;
+			border: 2px solid white;
+			position: relative;
+		}
+	</style>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../jquery-ui.js"></script>
+	<link rel="stylesheet" href="../jquery-ui.css">
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$("#target")
+
+			$("#target").on("click",function(){
+				//$(this).effect("bounce")
+				//$(this).effect("explode")
+				$(this).animate({left:100},1000)
+				$(this).animate({width:"+=20","background-color":"red"})
+			})
+
+
+		})
+	</script>
+</head>
+
+
+<body>
+
+	<div id="target"></div>
+
+
+
+
+	<ul id="chungus">
+		<li><img src=""></li>
+		<li><img src=""></li>
+		<li><img src=""></li>
+	</ul>
+
+	<ul>
+		<li>
+			<div>1</div>
+		</li>
+		<li>
+			<div>2</div>
+		</li>
+		<li>
+			<div>3</div>
+		</li>
+
+	</ul>
+
+	<div id="firstdiv" title="asd">
+		<p>this is my first div</p>
+	</div>
+	<div id="secondiv">this is my second div</div>
+	<div id="thirdiv">this is my third div</div>
+
+	<div id="classic" class="borderme"> i have the borderme class</div>
+
+	<div id="dc">dinamic content</div>
+
+
+	<select>
+		<option value="default">selecciona una opcion</option>
+		<option value="second" selected="true"> segunda</option>
+		<option value="tercera">tercera</option>
+	</select>
+
+
+	<button id="button1">click me</button>
+	<form>
+		<input id="firstnametextbox" value="john" type="text" />
+		<textarea rows="5" cols="60" id="commentsbox"></textarea>
+		<input id="submitinput" type="submit" value=" submit">
+	</form>
+
+
+	<table id="ttable">
+		<thead>
+			<tr>
+				<th>ff</th>
+				<th>sf</th>
+				<th>tf</th>
+				<th>ff</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+			<tr>
+				<td>first field</td>
+				<td>second field</td>
+				<td>third field</td>
+				<td>four field</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+
+</html>
